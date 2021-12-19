@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.header {
+  width: 100%;
+  background-color: v.$primary-third;
+  border-bottom: v.$border-default;
+  height: auto;
+
+  @include m.md {
+    height: 8rem;
+  }
+
+  .container {
+    @include m.container;
+    @include m.flex-layout(column, wrap, center, center);
+
+    @include m.md {
+      @include m.flex-layout(row, wrap, space-between, center);
+    }
+
+    h1 {
+      color: v.$white;
+    }
+
+    .links {
+      @include m.flex-layout(column, wrap, center, center);
+
+      @include m.md {
+        @include m.flex-layout(row, wrap, flex-end, center);
+      }
+
+      gap: 2rem;
+      a {
+        @include m.link(v.$white, lighten(v.$primary-third, 50%));
+        font-size: v.$font-size-xl;
+      }
+    }
+  }
+}

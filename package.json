@@ -1,0 +1,22 @@
+{
+  "name": "practice-december-2021-complete-guide-css-sass",
+  "version": "1.0.0",
+  "description": "Code along",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-laws/practice-december-2021-complete-guide-css-sass.git"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-purgecss": "^4.1.3",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.45.0"
+  }
+}

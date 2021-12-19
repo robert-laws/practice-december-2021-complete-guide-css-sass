@@ -1,0 +1,37 @@
+@use '../abstracts/mixins' as m;
+
+$col-spans: (
+  '1': 1,
+  '2': 2,
+  '3': 3,
+  '4': 4,
+  '5': 5,
+);
+
+$row-spans: (
+  '1': 1,
+  '2': 2,
+  '3': 3,
+  '4': 4,
+  '5': 5,
+);
+
+@each $col, $val in $col-spans {
+  .span-col-#{$col} {
+    grid-column: span 1;
+
+    @include m.md {
+      grid-column: span #{$val};
+    }
+  }
+}
+
+@each $row, $val in $row-spans {
+  .span-row-#{$row} {
+    grid-row: span 1;
+
+    @include m.md {
+      grid-row: span #{$val};
+    }
+  }
+}

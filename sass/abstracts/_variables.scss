@@ -1,0 +1,66 @@
+// theme colors
+$primary-base: #c45225;
+$primary-second: #c46f4d;
+$primary-third: #783b23;
+$secondary-base: #014539;
+$secondary-second: #23786a;
+$error: #ff2600;
+$success: #00ff55;
+$warning: #ffd800;
+$info: #00b3ff;
+$white: #fff;
+$black: #000;
+
+// color palette
+$colors: (
+  'primary': $primary-base,
+  'primary-compliment-1': $primary-second,
+  'primary-compliment-2': $primary-third,
+  'secondary': $secondary-base,
+  'secondary-compliment-1': $secondary-second,
+  'error': $error,
+  'success': $success,
+  'warning': $warning,
+  'info': $info,
+  'white': $white,
+  'black': $black,
+);
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 0.5rem;
+$border-default: $base-border-thickness solid $black;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-2xl: $base-font-size * 2.5;
+$font-size-3xl: $base-font-size * 3;
+$font-size-4xl: $base-font-size * 3.5;
+
+// flex layout options
+$justify-content-options: (
+  'flex-start': flex-start,
+  'flex-end': flex-end,
+  'center': center,
+  'space-between': space-between,
+  'space-around': space-around,
+  'space-evenly': space-evenly,
+);
+
+$align-items-options: (
+  'flex-start': flex-start,
+  'flex-end': flex-end,
+  'center': center,
+  'stretch': stretch,
+  'baseline': baseline,
+);

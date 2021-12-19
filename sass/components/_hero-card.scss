@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.card {
+  border-radius: v.$base-border-radius * 2;
+  background-color: lighten(v.$secondary-second, 7%);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: auto;
+    display: block;
+    z-index: 1;
+    opacity: 0.5;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  .card-body {
+    position: absolute;
+    z-index: 2;
+
+    &.position-right {
+      bottom: 5%;
+      right: 5%;
+    }
+
+    &.position-left {
+      bottom: 5%;
+      left: 5%;
+    }
+  }
+}

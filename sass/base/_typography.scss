@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$sans-serif-font-family: 'Open Sans', sans-serif;
+$serif-font-family: 'Roboto Slab', serif;
+
+// default fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $serif-font-family;
+}
+
+h1 {
+  font-size: v.$font-size-4xl;
+}
+
+h2 {
+  font-size: v.$font-size-3xl;
+}
+
+h3 {
+  font-size: v.$font-size-3xl;
+}
+
+h4 {
+  font-size: v.$font-size-xl;
+}
+
+h5 {
+  font-size: v.$font-size-lg;
+}
+
+h6 {
+  font-size: v.$font-size-lg;
+}
+
+a,
+p,
+ol,
+ul,
+figure {
+  font-family: $sans-serif-font-family;
+}
+
+a,
+p {
+  font-size: v.$font-size-lg;
+}
